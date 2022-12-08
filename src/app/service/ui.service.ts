@@ -9,7 +9,7 @@ import { Transaction } from 'src/Transaction';
 
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' 
 })
 export class UiService {
   
