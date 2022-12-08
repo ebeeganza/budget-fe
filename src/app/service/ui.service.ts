@@ -168,7 +168,4 @@ public getallTransaction () {
         next: Transaction => this.allTransaction = Transaction
       })
 }
-
-
-
 }
