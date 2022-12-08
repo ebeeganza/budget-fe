@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UiService } from './service/ui.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'yemi-akinwale-budget-fe';
+
+
+
+  constructor(public ui:UiService) {}
 }
+

@@ -1,0 +1,119 @@
+
+<div>
+    <h1 class="top-bar"> MONTHLY BUDGET </h1>
+<hr>
+<mat-grid-list cols="2" rowHeight="2:2.5">
+    <mat-grid-tile>
+        <div class="home-card"> 
+            <h3>BANK</h3>
+                <mat-card> 
+                    <mat-form-field appearance="fill">
+                        <mat-label>Bank Name</mat-label>
+                        <input matInput type="text" [(ngModel)]="bankAcc">
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Account Type</mat-label>
+                        <input matInput type="text" [(ngModel)]="bankType">
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" floatLabel="always">
+                        <mat-label>Amount</mat-label>
+                        <input matInput type="number" class="example-right-align" placeholder="0" [(ngModel)]="bankBal">
+                        <span matTextPrefix>$&nbsp;</span>
+                        <span matTextSuffix>.00</span>
+                    </mat-form-field>
+                    <mat-card-actions>
+                        <button mat-button (click)="ui.addBank(bankAcc, bankType, bankBal)">SAVE</button>
+                    </mat-card-actions>
+                </mat-card>
+<hr> 
+                <h3>BUDGET</h3>
+                <mat-card> 
+                    <mat-form-field appearance="fill">
+                        <mat-label>budgetName</mat-label>
+                        <input matInput type="text" [(ngModel)]="budgetName">
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" floatLabel="always">
+                        <mat-label>Amount</mat-label>
+                        <input matInput type="number" class="example-right-align" placeholder="0" [(ngModel)]="budgetTotal">
+                        <span matTextPrefix>$&nbsp;</span>
+                        <span matTextSuffix>.00</span>
+                    </mat-form-field>
+                    <mat-card-actions>
+                        <button mat-button (click)="ui.addBudget(budgetName, budgetTotal)">SAVE</button>
+                    </mat-card-actions>
+                </mat-card>
+<hr>
+                <h3>TRANSACTIONS</h3>
+                <mat-card> 
+                    <mat-form-field appearance="fill">
+                        <mat-label>Select</mat-label>
+                            <mat-select [(ngModel)]="transDest">
+                                <mat-option value="Source">Source</mat-option>
+                                <mat-option value="Destination">Destination</mat-option>
+                            </mat-select>
+                    </mat-form-field>
+                    <!-- <mat-form-field appearance="fill">
+                        <mat-label>Select</mat-label>
+                            <mat-select [(ngModel)]="transBudg">
+                                <mat-option value="Bank">Bank</mat-option>
+                                <mat-option value="Utility">Utility</mat-option>
+                                <mat-option value="Rent">Rent</mat-option>
+                                <mat-option value="Food">Food</mat-option>
+                                <mat-option value="Misc">Misc</mat-option>
+                            </mat-select>
+                    </mat-form-field> -->
+                    <mat-form-field appearance="fill">
+                        <mat-label>transBudg</mat-label>
+                        <input matInput type="text" [(ngModel)]="transBudg">
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" floatLabel="always">
+                        <mat-label>Amount</mat-label>
+                        <input matInput type="number" class="example-right-align" placeholder="0" [(ngModel)]="transAmt">
+                        <span matTextPrefix>$&nbsp;</span>
+                        <span matTextSuffix>.00</span>
+                        </mat-form-field>
+                    <mat-card-actions>
+                        <button mat-button (click)="ui.addTrans(transDest, transBudg, transAmt)">SAVE</button>
+                    </mat-card-actions>
+                </mat-card>
+        </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile> 
+        <div> 
+        <h2>DASHBOARD</h2>
+                <h3>BANK</h3>
+                    <mat-card class="dash-card">
+                        <mat-card-content>BANK:
+                            {{bankAcc}}
+                        </mat-card-content><br>
+                        <mat-card-content>Total:
+                            {{bankBal}}
+                        </mat-card-content>
+                    </mat-card>
+                    <h3>BUDGET</h3>
+                    <div> 
+                        <mat-card class="dash1-card">
+                            <mat-card-content>BUDGET:
+                                {{budgetName}}
+                            </mat-card-content><br>
+                            <mat-card-content>Total:
+                                {{budgetTotal}}
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                <!-- <h3>BUDGET</h3>
+                <div *ngFor="let b of allBudget"> 
+                    <mat-card class="dash1-card">
+                        <mat-card-content>BUDGET:
+                            {{budgetName}}
+                        </mat-card-content><br>
+                        <mat-card-content>Total:
+                            {{budgetTotal}}
+                        </mat-card-content>
+                    </mat-card>
+                </div> -->
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
+</div>

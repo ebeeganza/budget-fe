@@ -1,0 +1,56 @@
+{
+  "bank": [
+    {
+      "bankAcc": "BoA",
+      "bankType": "saving",
+      "bankBal": 1
+    },
+    {
+      "id": 0.6095032329156238,
+      "bankAcc": "chab",
+      "bankType": "cas",
+      "bankBal": 100
+    },
+    {
+      "id": 0.18439007946717334,
+      "bankAcc": "ecobank",
+      "bankType": "chk",
+      "bankBal": 123
+    }
+  ],
+  "budget": [
+    {
+      "budgetName": "Utility",
+      "budgetTotal": 1
+    },
+    {
+      "id": 0.8467382800604015,
+      "budgetName": "",
+      "budgetTotal": 1
+    },
+    {
+      "id": 0.006172755258988083,
+      "budgetName": "ecobank",
+      "budgetTotal": 1456
+    }
+  ],
+  "transaction": [
+    {
+      "transDest": "BoA1",
+      "transBudg": "budg",
+      "transAmt": 1
+    },
+    {
+      "id": 0.5544296963669557,
+      "transDest": "Source",
+      "transBudg": "Bank",
+      "transAmt": 1000
+    },
+    {
+      "id": 0.9558640541857772,
+      "transDest": "Source",
+      "transBudg": "ecobank",
+      "transAmt": 1987
+    }
+  ]
+}
