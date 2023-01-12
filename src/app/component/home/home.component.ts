@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { UiService } from 'src/app/service/ui.service';
 import { Budget } from 'src/Budget';
+import { Transaction } from 'src/Transaction';
+import { Account } from 'src/Account';
+import { stringToArray } from 'ag-grid-community';
 
 
 @Component({
@@ -10,16 +13,20 @@ import { Budget } from 'src/Budget';
 })
 export class HomeComponent implements OnInit{
   
+  accounts: Account[] = [];
+  budgets: Budget[] = [];
 
- public bankAcc: string  = ""
- public bankType: string = ""
- public bankBal: number = 1
+ public accName: string  = ""
+ public accType: string = ""
+ public accBal: number = 1
  public budgetName: string = ""
  public budgetTotal: number = 1
- public transDest: string = ""
- public transBudg: string = ""
- public transAmt: number = 1
- public allBudget: Budget[] = []
+ public id: number = 1
+ public trcType: string = ""
+ public trcDest: string = ""
+ public trcAmt: number = 1
+ 
+ 
 
 
 constructor (public ui: UiService) {}
@@ -28,6 +35,9 @@ constructor (public ui: UiService) {}
 ngOnInit(): void {
   
 }
+
+
+
 }
 
 

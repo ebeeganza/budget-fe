@@ -1,7 +1,10 @@
 export class Budget {
+
+    
+
     constructor(
-        id: number,
-        budgetName: string,
-        budgetTotal: number
+        public id: number,
+        public budgetName: string,
+        public budgetTotal: number
     ) {}
 }

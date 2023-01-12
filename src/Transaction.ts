@@ -1,8 +1,8 @@
 export class Transaction {
     constructor(
-        id: number,
-        transDest: string,
-        transBudg: string,
-        transAmt: number
+        public id: number,
+        public trcType: string,
+        public trcDest: string,
+        public trcAmt: number
     ){}
 }

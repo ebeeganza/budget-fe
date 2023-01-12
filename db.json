@@ -1,56 +1,80 @@
 {
-  "bank": [
+  "account": [
     {
-      "bankAcc": "BoA",
-      "bankType": "saving",
-      "bankBal": 1
+      "id": "number",
+      "accName": "boa",
+      "accType": "sav",
+      "accBal": 1
     },
     {
-      "id": 0.6095032329156238,
-      "bankAcc": "chab",
-      "bankType": "cas",
-      "bankBal": 100
+      "id": 0.8008286486301142,
+      "accName": "isitok",
+      "accType": "isit",
+      "accBal": 100000
     },
     {
-      "id": 0.18439007946717334,
-      "bankAcc": "ecobank",
-      "bankType": "chk",
-      "bankBal": 123
+      "id": 0.03176788984416734,
+      "accName": "first",
+      "accType": "savi",
+      "accBal": 10000
+    },
+    {
+      "id": 0.6058213989968575,
+      "accName": "acct1",
+      "accType": "type1",
+      "accBal": 991
     }
   ],
   "budget": [
     {
+      "id": "number",
       "budgetName": "Utility",
       "budgetTotal": 1
     },
     {
-      "id": 0.8467382800604015,
-      "budgetName": "",
-      "budgetTotal": 1
+      "id": 0.7775725709292103,
+      "budgetName": "Food",
+      "budgetTotal": 1999
     },
     {
-      "id": 0.006172755258988083,
-      "budgetName": "ecobank",
-      "budgetTotal": 1456
+      "id": 0.387594062548962,
+      "budgetName": "Utility",
+      "budgetTotal": 1000
+    },
+    {
+      "id": 0.24578289219647886,
+      "budgetName": "Rent",
+      "budgetTotal": 4000
+    },
+    {
+      "id": 0.6444185940387039,
+      "budgetName": "Food",
+      "budgetTotal": 2000
+    },
+    {
+      "id": 0.20339388904691247,
+      "budgetName": "Utility",
+      "budgetTotal": 99
     }
   ],
   "transaction": [
     {
-      "transDest": "BoA1",
-      "transBudg": "budg",
-      "transAmt": 1
+      "id": "number",
+      "trcType": "income",
+      "trcDest": "BoA",
+      "trcAmt": 1
     },
     {
-      "id": 0.5544296963669557,
-      "transDest": "Source",
-      "transBudg": "Bank",
-      "transAmt": 1000
+      "id": 0.5976706026376724,
+      "trcType": "Income",
+      "trcDest": "Account",
+      "trcAmt": 18
     },
     {
-      "id": 0.9558640541857772,
-      "transDest": "Source",
-      "transBudg": "ecobank",
-      "transAmt": 1987
+      "id": 0.948073232209625,
+      "trcType": "Income",
+      "trcDest": "Utility",
+      "trcAmt": 190
     }
   ]
 }
